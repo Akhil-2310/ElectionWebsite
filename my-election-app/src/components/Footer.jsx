@@ -1,70 +1,84 @@
-import React from 'react';
-
 const Footer = () => {
-  return (
-    <footer className="bg-gray-900 text-white w-screen">
-      <div className="w-full px-4 py-8">
-        <div className="max-w-7xl mx-auto md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
-            <a href="https://eci.gov.in/" className="flex items-center">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/7/72/Election_Commission_of_India_Logo.svg"
-                className="h-10 mr-3"
-                alt="Election Commission Logo"
-              />
-              <span className="text-2xl font-semibold">Election Commission of India</span>
-            </a>
+    return (
+      <footer className="bg-white border-t border-gray-200">
+        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <div className="flex items-center">
+                <svg
+                  className="h-8 w-8 text-indigo-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path d="M12 8V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M8 12H16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <span className="ml-2 text-xl font-bold text-gray-900">ElectroElect</span>
+              </div>
+              <p className="mt-4 text-gray-500 text-sm">
+                A decentralized voting platform built on blockchain technology. Secure, transparent, and tamper-proof
+                elections.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Why Us</h3>
+              <ul className="mt-4 space-y-4">
+                <li>
+                  <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    Decentralized
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    Transparent
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    Efficient
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+              <ul className="mt-4 space-y-4">
+                <li>
+                  <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 w-full">
-            <div>
-              <h2 className="mb-6 text-lg font-semibold">Resources</h2>
-              <ul className="text-gray-400">
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">Election Guidelines</a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">Voting Process</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-lg font-semibold">Follow Us</h2>
-              <ul className="text-gray-400">
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">Twitter</a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">Facebook</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-lg font-semibold">Legal</h2>
-              <ul className="text-gray-400">
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">Terms & Conditions</a>
-                </li>
-              </ul>
-            </div>
+          <div className="mt-8 border-t border-gray-200 pt-8">
+            <p className="text-base text-gray-400 text-center">
+              &copy; {new Date().getFullYear()} ElectroElect. All rights reserved.
+            </p>
           </div>
         </div>
-        <hr className="my-6 border-gray-700" />
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <span className="text-sm text-gray-400 text-center md:text-left">
-            © 2025 Election Commission of India. All Rights Reserved.
-          </span>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-gray-300">Twitter</a>
-            <a href="#" className="hover:text-gray-300">Facebook</a>
-            <a href="#" className="hover:text-gray-300">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-};
-
-export default Footer;
+      </footer>
+    )
+  }
+  
+  export default Footer
+  
+  
